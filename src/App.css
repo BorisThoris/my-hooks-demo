@@ -1,11 +1,22 @@
 .App {
   text-align: center;
+  /* background-color: red; */
+  /* height: fit-content; */
+  width: 100%;
+
+  margin: auto;
+
+  background-image: url("./images/background2.png");
+  /* background-size: 100% 10%; */
+  /* background-size: auto; */
+  background-size: calc(750px / 0.75);
+  height: 865px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
-  pointer-events: none;
+  pointer-events: 30% none;
 }
 
 .App-header {
