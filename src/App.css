@@ -10,7 +10,16 @@
   /* background-size: 100% 10%; */
   /* background-size: auto; */
   background-size: calc(750px / 0.75);
+
+  animation-fill-mode: forwards;
+
   height: 865px;
+  z-index: 0;
+}
+
+#skyBackground {
+  background-image: url("./images/skybackground.jpg");
+  z-index: 1;
 }
 
 .App-logo {
@@ -32,6 +41,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@keyframes RoadAnimation {
+  0% {
+    background-position: -1px 0px;
+  }
+  100% {
+    background-position: -995px 0px;
+  }
 }
 
 @keyframes App-logo-spin {

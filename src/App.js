@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Provider } from "./myHookComponents/useGlobalState";
-import MyNameComp from "./myHookComponents/myNameHookComponent";
-import MyCarComp from "./myHookComponents/myCarHookComponent";
+
+import MyGameField from "./myHookComponents/myPlayingFieldHookComponent";
 
 import "./App.css";
 // import Counter from "./Counter";
@@ -81,10 +81,14 @@ const initialState = {
 
 export default function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      // style={{ animation: `RoadAnimation ${speed}s infinite linear` }}
+    >
       <Provider reducer={reducer} initialState={initialState}>
-        <MyNameComp></MyNameComp>
-        <MyCarComp></MyCarComp>
+        <MyGameField></MyGameField>
+        {/* <MyNameComp></MyNameComp> */}
+        {/* <MyCarComp></MyCarComp> */}
       </Provider>
     </div>
   );

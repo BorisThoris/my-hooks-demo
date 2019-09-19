@@ -126,13 +126,19 @@ export default function Counter() {
         <img src={carSvg} className="carBody" alt="lol"></img>
         <img
           src={wheelSvg}
-          style={{ animation: `WheelGas ${wheelSpeed}s linear infinite` }}
+          style={{
+            animation: `WheelGas ${wheelSpeed}s linear infinite`,
+            animationFillMode: "forwards"
+          }}
           className="wheel1"
           alt="lol"
         ></img>
         <img
           src={wheelSvg}
-          style={{ animation: `WheelGas ${wheelSpeed}s linear infinite` }}
+          style={{
+            animation: `WheelGas ${wheelSpeed}s linear infinite`,
+            animationFillMode: "forwards"
+          }}
           className="wheel2"
           alt="lol"
         ></img>

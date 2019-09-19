@@ -133,7 +133,7 @@
 
 @keyframes WheelGas {
   from {
-    transform: rotate(0deg);
+    transform: rotate(1deg);
   }
   to {
     transform: rotate(360deg);
