@@ -43,17 +43,15 @@ export default function Counter() {
     let brakePedalDown = state.brakePedalDown;
     let gasPedalDown = state.gasPedalDown;
     const interval = setInterval(() => {
-      console.log(state);
       if (brakePedalDown) {
         dispatch({ type: "SLOWDOWN" });
-        console.log("lololol");
       }
       if (gasPedalDown) {
         dispatch({ type: "SPEEDUP" });
       }
     }, 50);
     return () => clearInterval(interval);
-  }, [dispatch, state, state.brakePedalDown]);
+  }, [dispatch, state, state.brakePedalDown, state.speed]);
 
   let wheelSpeed = state.speed;
 
@@ -105,7 +103,7 @@ export default function Counter() {
           }}
           className="pedal"
           src={breakPedal}
-          style={{ height: "100%", width: "100%", transition: "0.55s" }}
+          style={{ height: "100%", width: "100%" }}
           alt="err"
         ></img>
         <img
@@ -117,7 +115,7 @@ export default function Counter() {
           }}
           className="pedal"
           src={gasPedal}
-          style={{ height: "100%", width: "100%", transition: "0.25s" }}
+          style={{ height: "100%", width: "100%" }}
           alt="err"
         ></img>
       </div>
