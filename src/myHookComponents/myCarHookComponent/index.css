@@ -52,6 +52,7 @@
   /* padding: 20px; */
   /* justify-content: space-between; */
   flex-direction: column;
+  width: 400;
 }
 
 .pedal:active {
@@ -75,8 +76,9 @@
   position: relative;
   perspective: 1000px;
 
-  top: 400px;
+  top: -400px;
   right: -85%;
+  z-index: 5;
 }
 
 /* Wheels */

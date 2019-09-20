@@ -11,7 +11,6 @@ function reducer(state, action) {
   let tempSpeed = state.speed;
   let tempGasPedalDown = state.gasPedalDown;
   let tempBrakePedalDown = state.brakePedalDown;
-  let tempName = state.name;
 
   switch (action.type) {
     case "INCREMENT":

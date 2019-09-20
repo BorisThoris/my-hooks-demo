@@ -1,4 +1,4 @@
-.App {
+.App2 {
   text-align: center;
   /* background-color: red; */
   /* height: fit-content; */
@@ -26,7 +26,7 @@
 #mountainBackground {
   background-image: url("../../images/mountainsBackground.png");
   z-index: 0;
-  transition: 2s;
+  transition: 1s;
 }
 
 @keyframes SkyAnimation {
