@@ -46,14 +46,14 @@ function reducer(state, action) {
       break;
 
     case "SPEEDUP":
-      tempSpeed -= 0.05;
+      tempSpeed -= 0.025;
       if (tempSpeed <= 0) {
-        tempSpeed = 0.05;
+        tempSpeed = 0.015;
       }
 
       break;
     case "SLOWDOWN":
-      tempSpeed += 0.15;
+      tempSpeed += 0.015;
 
       if (tempSpeed > 1) {
         tempSpeed = 1;
@@ -61,7 +61,7 @@ function reducer(state, action) {
       break;
 
     default:
-      return state;
+      break;
   }
 
   return {
