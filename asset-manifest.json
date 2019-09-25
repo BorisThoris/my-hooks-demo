@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-hooks-demo/static/css/main.f534ceb0.chunk.css",
+    "main.js": "/react-hooks-demo/static/js/main.b8a8b701.chunk.js",
+    "main.js.map": "/react-hooks-demo/static/js/main.b8a8b701.chunk.js.map",
+    "runtime~main.js": "/react-hooks-demo/static/js/runtime~main.9f88a39a.js",
+    "runtime~main.js.map": "/react-hooks-demo/static/js/runtime~main.9f88a39a.js.map",
+    "static/js/2.bb630f33.chunk.js": "/react-hooks-demo/static/js/2.bb630f33.chunk.js",
+    "static/js/2.bb630f33.chunk.js.map": "/react-hooks-demo/static/js/2.bb630f33.chunk.js.map",
+    "index.html": "/react-hooks-demo/index.html",
+    "precache-manifest.ef0bb86984e55fc5d054a2f0ade404b1.js": "/react-hooks-demo/precache-manifest.ef0bb86984e55fc5d054a2f0ade404b1.js",
+    "service-worker.js": "/react-hooks-demo/service-worker.js",
+    "static/css/main.f534ceb0.chunk.css.map": "/react-hooks-demo/static/css/main.f534ceb0.chunk.css.map",
+    "static/media/background2.png": "/react-hooks-demo/static/media/background2.0261859a.png",
+    "static/media/breakPedal.png": "/react-hooks-demo/static/media/breakPedal.1715b1a2.png",
+    "static/media/flameSvg.svg": "/react-hooks-demo/static/media/flameSvg.ccae098c.svg",
+    "static/media/gasPedal.png": "/react-hooks-demo/static/media/gasPedal.476db15f.png",
+    "static/media/image2vector.svg": "/react-hooks-demo/static/media/image2vector.6f3eb087.svg",
+    "static/media/mountainsBackground.png": "/react-hooks-demo/static/media/mountainsBackground.bfc96fe6.png",
+    "static/media/skyBackground.jpg": "/react-hooks-demo/static/media/skyBackground.348de5c8.jpg",
+    "static/media/wheel2vector.svg": "/react-hooks-demo/static/media/wheel2vector.5e9cf3c4.svg"
+  }
+}
