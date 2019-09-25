@@ -52,7 +52,9 @@ function reducer(state, action) {
 
       break;
     case "SLOWDOWN":
-      tempSpeed -= 0.5;
+      if (tempSpeed <= 2) {
+        tempSpeed -= 0.025;
+      } else tempSpeed -= 0.5;
 
       if (tempSpeed <= 0) {
         tempSpeed = 0;

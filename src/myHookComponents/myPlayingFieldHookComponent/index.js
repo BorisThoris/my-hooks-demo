@@ -42,7 +42,15 @@ export default function Counter() {
   let Mountain = () => CreateBackgroundComp(mountainBackground);
   let Road = () => CreateBackgroundComp(RoadBackgroundImg);
   return (
-    <div style={{ width: "100%" }}>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        height: "1290px",
+        overflow: "hidden"
+      }}
+    >
+      <div id="speedDiv">Current Speed: {speed}</div>
       {Sky()}
       {Mountain()}
       {Road()}

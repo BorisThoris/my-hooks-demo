@@ -7,9 +7,10 @@
 
   animation-fill-mode: forwards;
 
-  height: 865px;
+  height: 1270px;
   z-index: 0;
-  background-color: red;
+  /* background-color: red; */
+  overflow: auto;
 }
 
 .App-logo {

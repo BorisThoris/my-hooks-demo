@@ -56,8 +56,8 @@ export default function Counter() {
   let wheelSpeed = state.speed;
 
   return (
-    <div>
-      <div id="arrowHolder">
+    <div style={{ top: "26%", position: "relative" }}>
+      {/* <div id="arrowHolder">
         <button>
           <img
             onMouse={() => {
@@ -91,7 +91,7 @@ export default function Counter() {
           }}
           alt="err"
         ></img>
-      </div>
+      </div> */}
 
       <div id="pedalHolder">
         <img
