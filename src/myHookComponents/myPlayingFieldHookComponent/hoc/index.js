@@ -8,7 +8,7 @@ const hoc = Component => {
     imageMover = (element, bgn, bool, speed) => {
       // const [state, dispatch] = useGlobalState();
       // window.alert(speed);
-      let newX = element.props.style.left.split("%")[0] - speed / 2;
+      let newX = element.props.style.left.split("%")[0] - speed / 100;
       // window.alert(newX);
       if (newX === -10 && bool) {
         newX = 100;

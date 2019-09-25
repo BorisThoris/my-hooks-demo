@@ -46,15 +46,15 @@ function reducer(state, action) {
 
     case "SPEEDUP":
       tempSpeed += 1;
-      if (tempSpeed >= 6) {
-        tempSpeed = 5;
+      if (tempSpeed >= 50) {
+        tempSpeed = 50;
       }
 
       break;
     case "SLOWDOWN":
       if (tempSpeed <= 2) {
-        tempSpeed -= 0.025;
-      } else tempSpeed -= 0.5;
+        tempSpeed -= 1.0;
+      } else tempSpeed -= 2;
 
       if (tempSpeed <= 0) {
         tempSpeed = 0;
@@ -75,7 +75,7 @@ function reducer(state, action) {
 
 const initialState = {
   name: "Boris",
-  speed: 1,
+  speed: 0,
   gasPedalDown: false,
   breakPedalDown: false
 };
