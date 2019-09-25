@@ -1,0 +1,18 @@
+.App2 {
+  text-align: center;
+  /* background-color: red; */
+  /* height: fit-content; */
+  width: 400%;
+  position: absolute;
+  margin: auto;
+
+  /* background-image: url("../../../../images/background2.png"); */
+  /* background-size: 100% 10%; */
+  /* background-size: auto; */
+  background-size: calc(750px / 0.75);
+
+  animation-fill-mode: forwards;
+  /* left: -220px; */
+  height: 865px;
+  z-index: 0;
+}

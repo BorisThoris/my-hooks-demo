@@ -3,6 +3,10 @@ import { useGlobalState } from "../useGlobalState";
 import "./index.css";
 
 import MyCarComp from "../myCarHookComponent";
+import BackgroundHook from "./components/roadBackground";
+import RoadBackgroundImg from "../../images/background2.png";
+import SkyBackground from "../../images/skyBackground.jpg";
+import mountainBackground from "../../images/mountainsBackground.png";
 
 window.speed = 1;
 
@@ -10,36 +14,38 @@ export default function Counter() {
   const [state, dispatch] = useGlobalState();
   let speed = state.speed * 4;
 
-  console.log(true);
-  return (
-    <div>
+  const CreateBackgroundComp = tempBackGroundImage => {
+    let backgroundCubes = [];
+    let tempBackground = (
       <div
-        id="skyBackground"
+        className="App2"
         style={{
-          animation: `SkyAnimation  infinite linear `,
-          animationDuration: `${speed * 10}s`,
-          animationFillMode: "forwards"
+          left: "-5%",
+          backgroundImage: `url(${tempBackGroundImage})`
         }}
-      >
-        {/* //speed */}
-        <div
-          id="mountainBackground"
-          style={{
-            animation: `MountainAnimation  infinite linear `,
-            animationFillMode: "forwards",
-            animationDuration: ` ${speed * 6}s`
-          }}
-        >
-          <div
-            className="App2"
-            style={{
-              animation: `RoadAnimation  infinite linear`,
-              animationFillMode: "forwards",
-              animationDuration: ` ${speed}s`
-            }}
-          ></div>
-        </div>
-      </div>
+      ></div>
+    );
+
+    // window.alert("render");
+    backgroundCubes.push(tempBackground);
+
+    return (
+      <BackgroundHook
+        backgroundImage={tempBackGroundImage}
+        backgroundArray={backgroundCubes}
+      />
+    );
+  };
+
+  console.log(true);
+  let Sky = () => CreateBackgroundComp(SkyBackground);
+  let Mountain = () => CreateBackgroundComp(mountainBackground);
+  let Road = () => CreateBackgroundComp(RoadBackgroundImg);
+  return (
+    <div style={{ width: "100%" }}>
+      {Sky()}
+      {Mountain()}
+      {Road()}
 
       <MyCarComp></MyCarComp>
     </div>

@@ -76,7 +76,7 @@
   position: relative;
   perspective: 1000px;
 
-  top: -400px;
+  top: +400px;
   right: -85%;
   z-index: 5;
 }
